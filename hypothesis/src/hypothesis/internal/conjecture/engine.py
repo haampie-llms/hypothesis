@@ -21,8 +21,13 @@ from enum import Enum
 from random import Random
 from typing import Literal, NoReturn, cast
 
-from hypothesis import HealthCheck, Phase, Verbosity, settings as Settings
-from hypothesis._settings import local_settings
+from hypothesis._settings import (
+    HealthCheck,
+    Phase,
+    Verbosity,
+    local_settings,
+    settings as Settings,
+)
 from hypothesis.database import ExampleDatabase, choices_from_bytes, choices_to_bytes
 from hypothesis.errors import (
     BackendCannotProceed,

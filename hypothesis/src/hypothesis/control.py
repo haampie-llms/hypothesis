@@ -18,7 +18,7 @@ from types import TracebackType
 from typing import TYPE_CHECKING, Any, Literal, NoReturn, Optional, overload
 from weakref import WeakKeyDictionary
 
-from hypothesis import Verbosity, settings
+from hypothesis._settings import Verbosity, settings
 from hypothesis.errors import InvalidArgument, UnsatisfiedAssumption
 from hypothesis.internal.compat import BaseExceptionGroup
 from hypothesis.internal.conjecture.data import ConjectureData
